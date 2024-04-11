@@ -382,7 +382,7 @@ bot.onText(command.removeTD, async (msg) => {
 
 const userinChannel = async (msg) => {
     try {
-        let user = await bot.getChatMember("@aryan_bots", msg.from.id);
+        let user = await bot.getChatMember("@TomenBots", msg.from.id);
 
         if (user.status === "member" || user.status === "administrator") {
             console.log(user.status, msg.from.id);
@@ -401,7 +401,7 @@ const sendJoinChannel = async (msg) => {
     const opts = {
         reply_markup: {
             inline_keyboard: [
-                [{text: "Join Channel", url: "https://t.me/aryan_bots"}],
+                [{text: "Join Channel", url: "https://t.me/TomenBots"}],
             ],
         },
     };
